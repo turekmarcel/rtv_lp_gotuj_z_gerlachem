@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.g-icons-fix {
+  justify-content: flex-end;
+}
+
 .gerlach-fix-1 {
   transform: translateX(-20px);
 }
