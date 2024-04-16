@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gerlach-icons{
+    display: flex;
+}
+
+.gerlach-fix-1{
+    transform: translateX(-20px);
+}
+
+
+.gerlach-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #F8F2E9;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+.g-banner-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.g-banner{
+    width: 100%;
+}
+
+.gerlach-menu {
+    padding: 60px 0;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+
+    .gerlach-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .gerlach-circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 4px 5px 1px 0px #DDD9D4;
+            border-radius: 50%;
+            height: 160px;
+            width: 160px;
+
+
+            .gerlach_img_1 {
+                max-height: 180px;
+            }
+
+            .gerlach_img_2 {
+                max-height: 200px;
+            }
+
+            .gerlach_img_3 {
+                max-height: 120px;
+            }
+
+            .gerlach_img_4 {
+                max-height: 100px;
+            }
+
+            .gerlach_img_5 {
+                max-height: 130px;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 20px;
+            color: #b01236;
+        }
+    }
+}
+
+.gerlach-description,
+.gerlach-description-reverse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    .gerlach-title,
+    .gerlach-title-white{
+        width: 50%;
+
+        p{
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+    }
+
+    .gerlach-title-white{
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        padding: 45px 45px;
+        z-index: 1;
+
+        img{
+            height: auto;
+            width: 50px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .gerlach-title-img{
+        width: 40%;
+        z-index: 2;
+
+        img{
+            max-width: 100%;
+            
+        }
+    }
+}
+
+.gerlach-red-banner{
+    background-color: #b01236;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+
+    p{
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+.gerlach-footer {
+    background-color: #b01236;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+
+    img {
+        max-width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1230px) and (min-width: 960px) {
+    .gerlach-container {
+        max-width: 100%;
+    }
+
+    .gerlach-menu {
+
+        .gerlach-menu-item {
+
+            .gerlach-circle {
+                height: 120px;
+                width: 120px;
+
+                .gerlach_img_1 {
+                    max-height: 140px;
+                }
+
+                .gerlach_img_2 {
+                    max-height: 150px;
+                }
+
+                .gerlach_img_3 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_4 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_5 {
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+    .g-banner-mobile {
+        display: block;
+    }
+
+    .g-banner {
+        display: none;
+    }
+
+    .gerlach-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .gerlach-menu-item {
+            padding: 25px 0;
+            width: 49%;
+
+            .gerlach-circle {
+                height: 120px;
+                width: 120px;
+
+                .gerlach_img_1 {
+                    max-height: 140px;
+                }
+
+                .gerlach_img_2 {
+                    max-height: 150px;
+                }
+
+                .gerlach_img_3 {
+                    max-height: 80px;
+                }
+
+                .gerlach_img_4 {
+                    max-height: 75px;
+                }
+
+                .gerlach_img_5 {
+                    max-height: 90px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .gerlach-description{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    
+        .gerlach-title{
+            width: 100%;
+    
+            p{
+                text-align: justify;
+                letter-spacing: 1px;
+                font-size: 14px;
+            }
+        }
+    
+        .gerlach-title-img{
+            width: 100%;
+            margin-top: 20px;
+    
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .gerlach-red-banner{
+        padding: 10px;
+        width: 100%;
+    
+        p{
+            font-size: 0.8rem;
+        }
+    }
+
+    .gerlach-description,
+    .gerlach-description-reverse{
+        flex-direction: column;
+
+        .gerlach-title-img{
+            width: 100%;
+            z-index: 2;
+        }
+
+        .gerlach-title-white{
+            width: 100%;
+            z-index: 1;
+            
+        }
+    }
+
+    .gerlach-fix-1{
+        transform: translateY(-40px);
+    }
+}
